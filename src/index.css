@@ -1,0 +1,118 @@
+#root {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(244, 248, 191);
+}
+
+
+.app{
+  width: 100%;  
+  height: 100%;
+  background-color: rgb(244, 248, 191);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+@keyframes bounce {
+  0%, 80% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  } 
+}
+.welcome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 40%;
+  height: 10%;
+  text-align: center;
+  font-size: 3em;
+  color: #1a1a1a;
+  border-radius: 20px;
+  background-color: rgb(236, 241, 157);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  animation: bounce 2s infinite ease-in-out;
+}
+.main-game{
+  margin-top: 10px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.card-game{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  width: 85%;
+  height: 10%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
