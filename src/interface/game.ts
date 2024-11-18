@@ -2,7 +2,7 @@ import { Igambling } from "./Gambling";
 import { Iplayer } from "./Player";
 
 export interface Igame{
-    id: string;
+    _id: string;
     name: string;
     playerA: Iplayer;
     playerB: Iplayer;
