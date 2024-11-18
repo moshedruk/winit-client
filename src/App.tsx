@@ -23,6 +23,8 @@ function App() {
 
 
   return (
+    <> 
+    <div>😍</div>
     <div className='app'>
       <div className='welcome'>
         welcome to win-it
@@ -33,6 +35,7 @@ function App() {
         ))}
       </div>      
     </div>
+    </>
   )
 }
 
