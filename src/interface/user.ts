@@ -4,12 +4,12 @@ export interface Iuser {
     _id?: string;
     username: string;
     // email:string;
-    // password: string;
+     password: string;
     // mygames:Igame[]
-    // points: number;
+    points: number;
     // wins:number;
     // losses:number;
     // createdAt
-    // percent_souccess: number
+    percent_souccess: number
     // bets
 }

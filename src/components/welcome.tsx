@@ -1,7 +1,6 @@
 import React from 'react'
-import Login from './login'
-import { ImProfile } from 'react-icons/im'
-import Traveling from './traveling'
+import Login_card from './login-card'
+import Traveling_card from './traveling-card'
 
 export default function Welcome() {
     return (
@@ -10,8 +9,8 @@ export default function Welcome() {
                 welcome to win-it
             </div>
             <div className='Connect-or-free'>
-            <Login />
-            <Traveling />               
+                <Login_card />
+                <Traveling_card />
             </div>
             {/* <div><ImProfile className="icon-large" onClick={()=>alert("gggggg")} /></div> */}
         </>
