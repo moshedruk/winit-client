@@ -1,18 +1,29 @@
 import React from 'react'
+import { useAppSelector } from '../redux/store';
 interface GameCardProps {
     name: string;
-    players: string
+    playersA:string,
+    playersB:string
   }
   
   
-export default function GameCard({ name, players }:GameCardProps) {
+export default function GameCard({ name, playersA,playersB }:GameCardProps) {
+  const { user } = useAppSelector((state) => state.user);
   return (
     <div className='card-game'>
            <div className='name-game'>
             {name}
            </div>
-           <div className='players-game'>
-            {players} players
+           <div className='teams'>
+           <button className='btn-players-game'>
+            {playersA} 
+           </button>
+           <button className='btn-players-game'>
+            X 
+           </button>
+           <button className='btn-players-game'>
+            {playersB} 
+           </button>
            </div>
     </div>
   )

@@ -46,8 +46,8 @@
 }
 .main-game{
   margin-top: 10px;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,16 +57,29 @@
 }
 .card-game{
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
+  flex-direction: column;
   margin: 5px;
-  width: 85%;
-  height: 10%;
-  background-color: #f2f2f2;
+  width: 95%;
+  height: 60%;
+  min-height: 70px;
+  /* background-color: #f2f2f2; */
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.teams{
+  width: 95%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+}
+.btn-players-game{
+  width: 33%;
+  border: 2px solid ;
+}
 
 
 /* a {

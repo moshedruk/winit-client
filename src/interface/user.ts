@@ -1,10 +1,15 @@
 import { Igame } from "./game";
 
-export interface Iuser{
+export interface Iuser {
     _id?: string;
-    name: string;
-    password: string;
-    mygames:Igame[]
-    points: number
-    percent_souccess: number
+    username: string;
+    // email:string;
+    // password: string;
+    // mygames:Igame[]
+    // points: number;
+    // wins:number;
+    // losses:number;
+    // createdAt
+    // percent_souccess: number
+    // bets
 }

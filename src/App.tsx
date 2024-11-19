@@ -7,16 +7,17 @@ import GameCard from './components/gameCard'
 
 function App() {
   const listgame = [
-    { name: "FIFA 24", players: "Barcelona vs Real Madrid" },
-    { name: "Call of Duty: Warzone", players: "Team Ghosts vs Team Shadow Company" },
-    { name: "League of Legends", players: "Team Liquid vs G2 Esports" },
-    { name: "Valorant", players: "Fnatic vs Sentinels" },
-    { name: "Dota 2", players: "OG vs PSG.LGD" },
-    { name: "Overwatch 2", players: "Seoul Dynasty vs San Francisco Shock" },
-    { name: "Fortnite", players: "Solo Player A vs Solo Player B" },
-    { name: "CS:GO", players: "NAVI vs Astralis" },
-    { name: "Rocket League", players: "Team Vitality vs BDS" },
-    { name: "PUBG", players: "Squad Alpha vs Squad Bravo" }
+    { name: "FIFA 24", playersA: "Barcelona" ,playersB: "Real Madrid" },
+    { name: "Call of Duty: Warzone", playersA: "Team Ghosts " ,playersB:" Team Shadow Company" },
+    { name: "League of Legends", playersA: "Team Liquid ",playersB:" G2 Esports" },
+    { name: "Valorant", playersA: "Fnatic  ",playersB:"Sentinels" },
+    { name: "Dota 2", playersA: "OG",playersB:"PSG.LGD" },
+    { name: "Overwatch 2", playersA: "Seoul Dnasty ",playersB:"San Francisco Shock" },
+    { name: "Fortnite", playersA: "Solo Player A",playersB:"Solo Player B" },
+    { name: "CS:GO", playersA: "NAVI", playersB:"Astralis" },
+    { name: "Rocket League", playersA: "Team Vitality",playersB:"BDS" },
+    { name: "PUBG", playersA: "Squad Alpha ",playersB:"Squad Bravo" },
+    
   ];
   
   const mmm = 'mmm'
@@ -31,7 +32,7 @@ function App() {
       </div>
       <div className='main-game'>
         {listgame.map((game, index) => (
-          <GameCard key={index} name={game.name}  players = {game.players}/>
+          <GameCard key={index} name={game.name}  playersA = {game.playersA} playersB = {game.playersB}/>
         ))}
       </div>      
     </div>
