@@ -17,7 +17,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  background-image: url('/pexels.jpg');
+  background-size: contain; 
+  background-position: center; 
+  /* background-repeat: no-repeat;  */
+
+  
 }
 
 @keyframes bounce {
@@ -44,6 +49,75 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   animation: bounce 2s infinite ease-in-out;
 }
+.icon-large {
+  position: fixed;
+  margin-left: 22px;
+  font-size: 80px;
+  color: rgb(104, 92, 92);
+  
+}
+.icon-large:hover{
+  cursor:grab;
+  color: rgb(133, 119, 119);
+  /* background-color: rgb(128, 39, 39); ; */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+  
+}
+.Connect-or-free{
+  margin-top: 70px;
+  width: 60%;
+  height:50%; 
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-login{
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(178, 182, 181, 0.7);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  
+}
+.card-Traveling{
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(178, 182, 181, 0.7);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.card-login:hover{
+  transform: scale(1.2); /* הגדלה */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2)
+}
+.card-Traveling:hover{
+  transform: scale(1.2); /* הגדלה */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2)
+}
+.btn-login{
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: rgb(236, 241, 157);
+  color: #1a1a1a;
+  border-radius: 20px;
+  cursor: pointer;  
+}
+.btn-login:hover{
+  border-radius: 10px;
+  width: 50%;
+}
+
+
 .main-game{
   margin-top: 10px;
   width: 80%;
