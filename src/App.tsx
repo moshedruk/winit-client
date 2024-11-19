@@ -16,7 +16,7 @@ function App() {
     { name: "Fortnite", playersA: "Solo Player A",playersB:"Solo Player B" },
     { name: "CS:GO", playersA: "NAVI", playersB:"Astralis" },
     { name: "Rocket League", playersA: "Team Vitality",playersB:"BDS" },
-    { name: "PUBG", playersA: "Squad Alpha ",playersB:"Squad Bravo" },
+    
     
   ];
   
