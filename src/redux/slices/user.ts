@@ -40,11 +40,14 @@ export const fetchLogin = createAsyncThunk(
     name: "user",
     initialState: initdata,
     reducers: {
+      updateUser: (state, action) => {
+        Object.assign(state, action.payload);
+      },
       
     },  
     extraReducers: (builder: ActionReducerMapBuilder<userState>) => {
       builder
-        .addCase(fetchLogin.pending, (state, action) => {          
+        .addCase(fetchLogin.pending, (state) => {          
           state.err = null;
           state.user = null;
         })
@@ -60,4 +63,5 @@ export const fetchLogin = createAsyncThunk(
         })
     },  
 })
+export const { updateUser } = userSlice.actions;
 export default userSlice

@@ -1,26 +1,33 @@
-import React from 'react'
+import { useEffect } from 'react'
 import GameCard from './gameCard'
+import { useAppDispatch, useAppSelector } from '../redux/store';
+import { fetchGetAllGame } from '../redux/slices/game';
 
 export default function Listgame() {
-    const listgame = [
-        { name: "FIFA 24", playersA: "Barcelona" ,playersB: "Real Madrid" },
-        { name: "Call of Duty: Warzone", playersA: "Team Ghosts " ,playersB:" Team Shadow Company" },
-        { name: "League of Legends", playersA: "Team Liquid ",playersB:" G2 Esports" },
-        { name: "Valorant", playersA: "Fnatic  ",playersB:"Sentinels" },
-        { name: "Dota 2", playersA: "OG",playersB:"PSG.LGD" },
-        { name: "Overwatch 2", playersA: "Seoul Dnasty ",playersB:"San Francisco Shock" },
-        { name: "Fortnite", playersA: "Solo Player A",playersB:"Solo Player B" },
-        { name: "CS:GO", playersA: "NAVI", playersB:"Astralis" },
-        { name: "Rocket League", playersA: "Team Vitality",playersB:"BDS" },
-        
-      ];
+  console.log("hhhh")
+
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    console.log("33333333333333")
+    dispatch(fetchGetAllGame())
+  }, []);
+  const games = useAppSelector((state) => state.games.games);
+  if (!games) {
+    console.log(games)
+    return <h1>Loading...</h1>
+  }
+ 
+  
+  
+  
+   
   return (
-    <div>
+    <>
       <div className='main-game'>
-        {listgame.map((game, index) => (
-          <GameCard key={index} name={game.name}  playersA = {game.playersA} playersB = {game.playersB}/>
+        {games.map((game, index) => (
+          <GameCard key={index} name={game._id}  playersA = {game.ended} playersB = {game.scoreA}/>
         ))}
       </div>   
-    </div>
+    </>
   )
 }

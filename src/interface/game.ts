@@ -1,14 +1,14 @@
-import { Igambling } from "./Gambling";
-import { Iplayer } from "./Player";
+import { IBet} from "./Gambling";
+import {ITeam } from "./team";
 
 export interface Igame{
-    _id: string;
-    name: string;
-    playerA: Iplayer;
-    playerB: Iplayer;
-    date: string;
-    winner: string
-    is_finished: boolean;
-    Gambling:Igambling[]
-    result:string
+    _id?:string
+    teamA:ITeam
+    teamB:ITeam
+    dateOfGame:Date
+    ended:boolean
+    scoreA:number
+    scoreB:number
+    bets:IBet[]
+    gamblers?:string[]
 }

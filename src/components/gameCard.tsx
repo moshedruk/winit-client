@@ -7,7 +7,7 @@ interface GameCardProps {
   }
   
   
-export default function GameCard({ name, playersA,playersB }:GameCardProps) {
+export default function GameCard({ name, playersA,playersB }:any) {
   const { user } = useAppSelector((state) => state.user);
   return (
     <div className='card-game'>
