@@ -15,7 +15,7 @@ export const fetchGetAllGame = createAsyncThunk(
   "allGames",
   async (_, thunkApi) => {
     try {
-      const res = await fetch("http://localhost:2233/games");
+      const res = await fetch("https://win-it-server.onrender.com/games");
       if (res.status != 200) {
         return thunkApi.rejectWithValue("Can't get games, please try again");
       }

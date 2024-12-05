@@ -15,11 +15,7 @@ export default function Listgame() {
   if (!games) {
     console.log(games)
     return <h1>Loading...</h1>
-  }
- 
-  
-  
-  
+  } 
    
   return (
     <>
