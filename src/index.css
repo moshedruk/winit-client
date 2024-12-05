@@ -259,6 +259,9 @@
   justify-content: space-between;
   gap: 10px;
 }
+.p-v{
+  color: #ff7675;
+}
 .btn-players-game {
   width: 33%;
   padding: 10px 15px;

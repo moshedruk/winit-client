@@ -24,20 +24,18 @@ export default function GameCard({ imageA, imageB, playersA, playersB,gameId,bet
           <img src={imageA} alt="Football Logos"
             style={{ width: "100px", height: "auto" }} />
         </div>
-         
-
         ?מי הימר על המשחק הזה 
         <div><img src={imageB} alt="sds" style={{ width: "100px", height: "auto" }} /></div>
       </div>
       <div className='teams'>
         <button className='btn-players-game'>
-          {playersA}
+          {playersA} <p className='p-v'>{betId[1].value}</p>
         </button>
         <button className='btn-players-game'>
-          X
+          X  <p className='p-v'>{betId[0].value}</p>
         </button>
         <button className='btn-players-game'>
-          {playersB}
+          {playersB} <p className='p-v'>{betId[2].value}</p>
         </button>
       </div>
       </>
