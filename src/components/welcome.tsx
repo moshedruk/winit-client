@@ -2,14 +2,30 @@ import React from 'react'
 import Login_card from './login-card'
 import Traveling_card from './traveling-card'
 import Listgame from './listgame'
+import { useNavigate } from 'react-router-dom'
+import { FaRegUser } from "react-icons/fa";
 
 export default function Welcome() {
-    console.log("lllllllllllllllllll")
+
+    const navigate = useNavigate()
+    const handleClickLogin = () => {
+        navigate('/Login')
+      }
+      const handleClickRegister = () => {
+        navigate('/Register')
+      }
+    
     return (
-        <>
+        <>  <div className='bar'>
+            <div className='sign'>
+            <button className='btn-sign-in' onClick={handleClickLogin}>sign-in</button>
+            <button className='btn-sign-up' onClick={handleClickRegister}>sign-up</button>
+            </div>
             <div className='welcome'>
                 welcome to win-it
             </div>
+            {/* <FaRegUser /> */}
+        </div>
             
                 {/* <Login_card />
                 <Traveling_card /> */}

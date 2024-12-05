@@ -4,11 +4,11 @@ import { useAppDispatch, useAppSelector } from '../redux/store';
 import { fetchGetAllGame } from '../redux/slices/game';
 
 export default function Listgame() {
-  console.log("hhhh")
+  
 
   const dispatch = useAppDispatch();
   useEffect(() => {
-    console.log("33333333333333")
+    
     dispatch(fetchGetAllGame())
   }, []);
   const games = useAppSelector((state) => state.games.games);
@@ -25,7 +25,7 @@ export default function Listgame() {
     <>
       <div className='main-game'>
         {games.map((game, index) => (
-          <GameCard key={index} name={game._id}  playersA = {game.ended} playersB = {game.scoreA}/>
+          <GameCard key={index} imageA={game.teamA.icon} imageB={game.teamB.icon}  playersA = {game.teamA.teamName} playersB = {game.teamB.teamName} gameId={game._id} betId={game.bets}/>
         ))}
       </div>   
     </>
