@@ -1,7 +1,11 @@
+import { socket } from '../main'
 import Listgame from './listgame'
 import { useNavigate } from 'react-router-dom'
 
 export default function Welcome() {
+    socket.on("all-bets",(data)=>{
+        console.log(data)
+    })
 
     const navigate = useNavigate()
     const handleClickLogin = () => {

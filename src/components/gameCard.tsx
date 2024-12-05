@@ -1,5 +1,6 @@
 import { useAppSelector } from '../redux/store';
 import { IBet } from '../interface/Gambling';
+import { socket } from '../main';
 interface GameCardProps {
   imageA: string
   imageB: string,
@@ -15,8 +16,9 @@ export default function GameCard({ imageA, imageB, playersA, playersB,gameId,bet
   const newBet = (e:any) => {
     const value = e.target.value;
     console.log(user,gameId,value)
-    // dispatch(fetchBet(gameId, value, betId[0]._id));
-    // console.log("value:",value,"game:",gameId, "userId:",user._doc._id) 
+    socket.emit("bet",{userId:user._doc._id,
+      game:gameId,
+      bet:"67505e0884c3191255efd72d"})    
   }
 
   return (
