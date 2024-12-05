@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
 export default function Register() {
 
@@ -14,7 +14,8 @@ export default function Register() {
                 },
                 body: JSON.stringify({username, password}),
               });
-              const data = await res.json();
+              console.log(res)
+              
         } catch (err) {
             console.log({err})
         }

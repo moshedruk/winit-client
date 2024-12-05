@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAppSelector } from '../redux/store';
 import { IBet } from '../interface/Gambling';
 interface GameCardProps {
@@ -15,8 +14,9 @@ export default function GameCard({ imageA, imageB, playersA, playersB,gameId,bet
   const  {user}  = useAppSelector((state) => state.user);
   const newBet = (e:any) => {
     const value = e.target.value;
+    console.log(user,gameId,value)
     // dispatch(fetchBet(gameId, value, betId[0]._id));
-    console.log("value:",value,"game:",gameId, "userId:",user._doc._id) 
+    // console.log("value:",value,"game:",gameId, "userId:",user._doc._id) 
   }
 
   return (

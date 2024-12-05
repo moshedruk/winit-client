@@ -25,7 +25,7 @@ export default function Listgame() {
     <>
       <div className='main-game'>
         {games.map((game, index) => (
-          <GameCard key={index} imageA={game.teamA.icon} imageB={game.teamB.icon}  playersA = {game.teamA.teamName} playersB = {game.teamB.teamName} gameId={game._id} betId={game.bets}/>
+          <GameCard key={index} imageA={game.teamA.icon} imageB={game.teamB.icon}  playersA = {game.teamA.teamName} playersB = {game.teamB.teamName} gameId={game._id!} betId={game.bets}/>
         ))}
       </div>   
     </>

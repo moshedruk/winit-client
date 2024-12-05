@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { useAppDispatch, useAppSelector } from '../redux/store';
+import  { useState } from 'react'
+import { useAppDispatch } from '../redux/store';
 import { fetchLogin } from '../redux/slices/user';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const dispatch = useAppDispatch();
-     const  {user}  = useAppSelector((state) => state.user);
+     
     const navigate = useNavigate()
     const handleClickLogin = async () => {
       const resultAction = await dispatch(fetchLogin({ username, password }));   

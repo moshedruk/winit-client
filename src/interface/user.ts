@@ -1,4 +1,3 @@
-import { Igame } from "./game";
 
 export interface Iuser {
     _id?:string

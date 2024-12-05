@@ -1,9 +1,5 @@
-import React from 'react'
-import Login_card from './login-card'
-import Traveling_card from './traveling-card'
 import Listgame from './listgame'
 import { useNavigate } from 'react-router-dom'
-import { FaRegUser } from "react-icons/fa";
 
 export default function Welcome() {
 
